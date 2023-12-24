@@ -1,0 +1,21 @@
+service: aws-node-http-api-project
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /{pathA}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}/{pathC}
+          method: get

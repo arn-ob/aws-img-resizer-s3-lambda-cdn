@@ -1,0 +1,50 @@
+service: image-resizer-function-http-v2
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /{pathA}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}/{pathC}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}/{pathC}/{pathD}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}/{pathC}/{pathD}/{pathE}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}/{pathC}/{pathD}/{pathE}/{pathF}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}/{pathC}/{pathD}/{pathE}/{pathF}/{pathG}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}/{pathC}/{pathD}/{pathE}/{pathF}/{pathG}/{pathH}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}/{pathC}/{pathD}/{pathE}/{pathF}/{pathG}/{pathH}/{pathI}
+          method: get
+      - httpApi:
+          path: /{pathA}/{pathB}/{pathC}/{pathD}/{pathE}/{pathF}/{pathG}/{pathH}/{pathI}/{pathJ}
+          method: get
+
+
+    # readCustomer:
+    #   handler: handler.readCustomer
+    #   events:
+    #     - http:
+    #         path: customer/{customerId}
+    #         method: get

@@ -1,0 +1,22 @@
+{
+  "name": "image-resizer-function-http",
+  "version": "1.0.0",
+  "description": "Image Resizer Function HTTP",
+  "main": "index.js",
+  "scripts": {
+    "dep-arn": "serverless deploy --aws-profile=arn",
+    "dep-10ms": "serverless deploy --aws-profile=10ms",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arn-ob/image-resizer-function-http.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arn-ob/image-resizer-function-http/issues"
+  },
+  "homepage": "https://github.com/arn-ob/image-resizer-function-http#readme"
+}
